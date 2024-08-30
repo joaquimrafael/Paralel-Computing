@@ -1,4 +1,4 @@
-/* Algoritmo convencional para multiplicação de matrizes, feito por Joaquim
+/* Algoritmo aprimorado para multiplicação de matrizes, feito por Joaquim
   Prieto RA: 10408805 para disciplina de Computação Paralela da turma 05G de
   Ciência da Computação ministrada pelo professor Caleb
 */
@@ -17,8 +17,8 @@ void multiplicaMatriz(int matriz1[SIZE][SIZE], int matriz2[SIZE][SIZE],
                       int resultado[SIZE][SIZE]) {
 
   for (int i = 0; i < SIZE; i++) {
-    for (int j = 0; j < SIZE; j++) {
-      for (int k = 0; k < SIZE; k++) {
+    for (int k = 0; k < SIZE; k++) {
+      for (int j = 0; j < SIZE; j++) {
         resultado[i][j] += matriz1[i][k] * matriz2[k][j];
       }
     }
